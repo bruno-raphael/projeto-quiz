@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Interativo</h1>
+        <p>Teste seus conhecimentos com esse quiz!</p>
+    </header>
+
+    <main>
+        <div id="quiz-container">
+            <!-- Pergunta do Quiz -->
+            <div id="question-container">
+                <h2 id="question">Qual é a capital da França?</h2>
+            </div>
+
+            <!-- Opções de Respostas -->
+            <div id="answers-container">
+                <button class="answer">Paris</button>
+                <button class="answer">Londres</button>
+                <button class="answer">Roma</button>
+                <button class="answer">Madri</button>
+            </div>
+
+            <!-- Botão para próxima pergunta -->
+            <div id="controls">
+                <button id="next-btn">Próxima Pergunta</button>
+            </div>
+
+            <!-- Feedback do resultado (correta/incorreta) -->
+            <div id="result-container">
+                <p id="result-text"></p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

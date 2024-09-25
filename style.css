@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg, rgba(4,28,28,1) 23%, rgba(0,13,212,1) 97%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Container do Quiz */
+#quiz-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+   
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+/* Pergunta */
+#question-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fffdfd;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Botões de Resposta */
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    background-color: #3498db;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.answer:hover {
+    background-color: #2980b9;
+}
+
+.answer:active {
+    background-color: #1c5981;
+}
+
+/* Botão de Próxima Pergunta */
+#controls {
+    text-align: center;
+}
+
+#next-btn {
+    background-color: #2ecc71;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+#next-btn:hover {
+    background-color: #27ae60;
+}
+
+#next-btn:active {
+    background-color: #1e8449;
+}
+
+/* Feedback de Resultado */
+#result-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Botão de reiniciar */
+button.btn {
+    background-color: #3498db; /* Azul vibrante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação suave */
+    margin-top: 20px; /* Espaço extra no topo */
+}
+
+button.btn:hover {
+    background-color: #2980b9; /* Escurece o azul ao passar o mouse */
+}
+
+/* Estilização para o botão de próxima pergunta */
+button#next-btn {
+    background-color: #2ecc71; /* Verde vibrante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button#next-btn:hover {
+    background-color: #27ae60; /* Escurece o verde ao passar o mouse */
+}
+
+/* Ajuste para que o tamanho da caixa de perguntas não varie */
+#question-container {
+    min-height: 150px; /* Define uma altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+button.answer {
+    background-color: #ecf0f1; /* Cor neutra para as opções */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.answer:hover {
+    background-color: #bdc3c7; /* Escurece a opção ao passar o mouse */
+}
+
+/* Texto de resultado */
+#result-text {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Alinhamento e tamanho fixo do container das respostas */
+#result-container {
+    margin-top: 15px;
+}
+
+
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
